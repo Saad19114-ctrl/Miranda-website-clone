@@ -1,2 +1,2 @@
 # Miranda-website-clone
-A take at an artistic website for me. I like the little complexities (functionalities) of the website
+My take at an artistic website. Just practicing my design concepts. I like the little complexities (functionalities) of the website
