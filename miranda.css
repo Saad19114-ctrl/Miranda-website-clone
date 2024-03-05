@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing :border-box; 
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: domain;
+    src: url(./5f242a69b1577e63266b4d72_DomaineDispCondMedium.ttf);
+}
+@font-face {
+    font-family: Editorial;
+    src: url(./5f242a694256f02b944d5767_EditorialNew-Light.ttf);
+}
+
+#main {
+    background-color: #625f5f;
+    overflow-x: hidden;
+} 
+
+.page1 {
+    height: 110vh; 
+    width: 100vw;
+    background-color: #C4BCB3;
+    position: relative;
+    overflow-x: hidden;
+}
+   
+.nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;  
+    padding: 0 30px;
+}   
+
+.nav img {
+    height: 15vh;
+    width: 30%
+}
+
+.nav h5 {
+    font-weight: 100;
+    font-size: 12px;
+    width: 30%;
+    color: #363634;
+} 
+
+.nav i{
+
+    width: 30%;
+    text-align: right;
+    color: black;
+    
+}
+
+.elems {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px; 
+    cursor: grabbing;
+}
+
+.elem1 {
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.elem1 .image-div {
+    overflow: hidden;
+}
+
+.elem3 .image-div {  
+    overflow: hidden;
+}
+
+.image-div img {
+    width: 100%; 
+    height: 80%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+    border: 0.5px solid black;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.image-div:hover img {
+    scale: 1.1;
+}
+
+.elem2 {
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid #616060;
+    border-left: 1px solid #3b3a3a;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.elem3 {
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+
+}  
+
+.elem1 h4 img {
+    width: 70px;
+}
+
+.elem1 h4 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+}
+
+.elem1 h4 span {
+    border: none; 
+    color: #cdc6be;
+    font-size: 1.2vw;
+    font-weight: 400;
+    font-family: Canopee;
+    background-color: #c03f13;
+    /* width: 50px; */
+    padding: 3px;
+    border-radius: 2px;
+    /* left: 10px; */
+}
+
+.elem1 p {
+    font-family: domain;
+    font-weight: 100;
+    color: #373737;
+}
+
+.elem2 h2 {
+    font-family: Canopee;
+    font-size: 4vw;
+    cursor: pointer;
+
+}
+
+.elem2 h3 {
+    width: 100%;
+    font-size: 2vw;  
+    font-weight: 400;
+    margin-top: 1.2vw;
+    font-family: Editorial;
+    cursor: default;
+}
+
+.elem2 h6 {
+    margin-top: 20px;
+    font-weight: 300;
+    margin-left: .2vw;
+    font-family: Editorial;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+    cursor: default;
+
+
+}
+.elem2 h6 span {
+    font-weight: 900;
+}
+
+.elem3 h4 img{
+    width: 100px;
+    height: 20px;
+}
+
+.elem3 h4 span {
+    border: none; 
+    color: #cdc6be;
+    font-size: 1.2vw;
+    font-weight: 400; 
+    font-family: Canopee;
+    background-color: #c03f13;
+    /* width: 50px; */
+    padding: 3px;
+    border-radius: 2px;
+    /* left: 10px; */
+}
+
+.elem3 h4 {
+    display: flex; 
+    align-items: center;
+    gap: 6px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+}
+
+.elem3 p {
+    font-family: domain;
+    font-weight: 100;
+    color: #373737;
+}
+
+.miranda-sheet {
+    width: 96%;
+    margin: 2%;    
+}
+
+.miranda-sheet h1{
+    color: #C4BCB3;
+    background-color: #1C1C19;
+
+    font-family: Canopee;
+    font-size: 33vw;
+    letter-spacing: -5px;
+    height: 85vh;
+}
+
+.change-color button {
+    margin: 3vw 37vw;
+    color: #625f5f;  
+    width: 30vw;
+    border: none;
+    background-color: transparent;
+    font-family: domain; 
+}
+
+.change-color button:hover{
+    color: #363434
+}
+
+#colorPickerContainer {
+    position: relative;
+    transform: translate(-30%, -10%);
+    background-color: #000000;
+    border-radius: 5px;
+    width: 550px;
+    height: 220px;
+    z-index: 1000; /* Ensure it's above other elements */
+    display: none;
+    margin-left: 550px;
+}
+
+  .colorOption {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;     
+}
+
+#colorPickerContainer .default-button button{
+    background-color: #000000;
+    color: wheat;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+}
+
+.close-button i{
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
